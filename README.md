@@ -95,7 +95,7 @@ $$
      - Validación de características asociadas con la supervivencia libre de recurrencia a distancia.
 
 8. **Publicaciones existentes basadas en el dataset:**
-   - Los hallazgos relevantes se informan en documentos científicos, accesibles a través de los enlaces relacionados en #Referencias.
+   - Los hallazgos relevantes se informan en documentos científicos, accesibles a través de los enlaces relacionados en **Referencias**.
 
 **Referencias:**
    - [Ref 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176866/)
