@@ -72,7 +72,7 @@ $$
      - Fase 2: 651 pacientes anotadas por un panel de 4 radiólogos.
      - Las anotaciones fueron realizadas por 8 radiólogos utilizando una interfaz gráfica en MATLAB.
      - La anotación incluyó tres secuencias de resonancia magnética: pre-contraste, primer post-contraste y sustracción.
-     - 
+
 4. **Datos Demográficos, Clínicos, Patológicos, Genómicos, Tratamiento, Resultados y Otros:**
    - Los datos clínicos detallados están disponibles [aquí](https://doi.org/10.7937/TCIA.e3sv-re93) bajo "Acceso a Datos" usando el elemento "Tipo de Datos" "Características Clínicas y Otros" en su version original, al igual que anidados en la carpeta [data](https://github.com/aconeop/monografia_udea/blob/1bd3c63fb22608bc159b0008784794703a35b78a/data/Clinical_and_Other_Features.xlsx).
    - Los datos incluyen información demográfica, características del tumor, hallazgos de la resonancia magnética, detalles de la cirugía, terapia de radiación, respuesta del tumor, recurrencia y seguimiento.
