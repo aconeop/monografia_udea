@@ -25,13 +25,13 @@ $$
 
 Donde:  
 
-|               - $n$ = $(?)$ numero de imagenes para la muestra.  
-|               - $N$ = $(773888)$ total de imagenes.  
-|               - $Z$ = $1.96$ valor de la distribución normal estándar correspondiente a un nivel de confianza del $95$%. 
-|               - $p$ = $0.5$ asumiendo que la proporción es igualmente probable de ser alta o baja dentro de la población.  
-|               - $E$ = $0.05$ es el margen de error que deseas permitir en tu estimación.  
+- $n$ = $(?)$ numero de imagenes para la muestra.  
+- $N$ = $(773888)$ total de imagenes.  
+- $Z$ = $1.96$ valor de la distribución normal estándar correspondiente a un nivel de confianza del $95$%. 
+- $p$ = $0.5$ asumiendo que la proporción es igualmente probable de ser alta o baja dentro de la población.  
+- $E$ = $0.05$ es el margen de error que deseas permitir en tu estimación.  
 
-Determine en $n$ muestral, resultando asi:  
+Obtuve entonces un $n$ muestral asi:  
 
 $$
 n = \frac{773888 \cdot 1.96^2 \cdot 0.5(1-0.5)}{0.05^2(773888-1) + 1.96^2 \cdot 0.5(1-0.5)} = 384
