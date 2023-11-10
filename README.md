@@ -113,7 +113,8 @@ Esta base de datos integral proporciona un recurso rico para investigar las cara
 
 1. Cuenta en [Goggle Colab](https://colab.research.google.com/) activa y algunas librerias que describo a continuacion:
 
-2. Las librerias que se requieren cargar son `pydicom` `rmarkdown`, `bookdown`, `tidyverse`, `kableExtra`, and `here`
+2. Las librerias que se requieren tener instaladas son `pydicom` `scikit-fuzzy`, se importan librerias comunes tambien como import os
+import `pandas`, `pydicom`, `matplotlib.pyplot`, `seaborn`, from skimage import `segmentation`, from io import `BytesIO`, from PIL import `Image`, `numpy`, `requests`, `skfuzzy`, en caso de que le falte instalar una, instalela usando `!pip install -U [nombre-del-paquete]`
 
 3. 
 ~a LaTeX installation
