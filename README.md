@@ -78,7 +78,7 @@ $$
    - Los datos incluyen información demográfica, características del tumor, hallazgos de la resonancia magnética, detalles de la cirugía, terapia de radiación, respuesta del tumor, recurrencia y seguimiento.
 
 5. **Información Técnica de Resonancia Magnética (MRI):**
-   - Los detalles técnicos están disponibles [aquí](https://doi.org/10.7937/TCIA.e3sv-re93) bajo "Acceso a Datos" usando el elemento "Tipo de Datos" "Características de Imágenes" en su version original, al igual que anidados en la carpeta [data](link aqui).
+   - Los detalles técnicos están disponibles [aquí](https://doi.org/10.7937/TCIA.e3sv-re93) bajo "Acceso a Datos" usando el elemento "Tipo de Datos" "Características de Imágenes" en su version original, al igual que anidados en la carpeta [data](https://github.com/aconeop/monografia_udea/blob/6f1fae8a166cb30f56725faea74908b5ad101bc7/data/Imaging_Features.xlsx).
    - La información incluye desde el diagnóstico hasta la fecha de la MRI, detalles del fabricante, opciones de escaneo, intensidad del campo y más.
 
 6. **Características de Imágenes:**
