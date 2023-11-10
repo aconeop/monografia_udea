@@ -2,7 +2,7 @@
 <p><img alt="Udea logo" width="450px" height="112px" src="https://www.udea.edu.co/wps/wcm/connect/udea/2288a382-341c-41ee-9633-702a83d5ad2b/logosimbolo-horizontal-png.png?MOD=AJPERES&CVID=ljeSAX9" align="center" hspace="10px" vspace="0px"></p>
 
 # **Análisis de Incidentes de Robo en Medellín.**
-<p style="line-height: 0; margin-bottom: 0;">_por Andrés M. Coneo Pretelt._</p> 
+<p style="line-height: 0; margin-bottom: 0;"> _por Andrés M. Coneo Pretelt._</p> 
 
 <!-- ### **Análisis de Incidentes de Robo en Medellín (2004-2020)** --> 
 
