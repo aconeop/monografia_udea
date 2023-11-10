@@ -85,7 +85,7 @@ $$
    - Las características se extrajeron previamente de tumores y tejido fibroglandular (FGT) utilizando secuencias T1.
    - Las características se categorizan en varios grupos, incluyendo volumen, tamaño, morfología, realce y heterogeneidad.
 
-7. **Características para Analisar:**
+7. **Características para Analizar:**
    - Se tienen una serie de características que se pueden evaluar:
      - Evaluación de la variabilidad de las características debido a cambios en el protocolo de resonancia magnética.
      - Evaluación de la estabilidad entre lectores con un subconjunto de 50 pacientes.
