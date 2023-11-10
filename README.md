@@ -98,12 +98,12 @@ $$
    - Los hallazgos relevantes se informan en documentos científicos, accesibles a través de los enlaces relacionados en #Referencias.
 
 **Referencias:**
-   - [Enlace al Documento 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176866/)
-   - [Enlace al Documento 2](https://pubmed.ncbi.nlm.nih.gov/29663411/)
-   - [Enlace al Documento 3](https://pubmed.ncbi.nlm.nih.gov/30033447/)
-   - [Enlace al Documento 4](https://pubmed.ncbi.nlm.nih.gov/29427210/)
-   - [Enlace al Documento 5](https://pubmed.ncbi.nlm.nih.gov/30328048/)
-   - [Enlace al Documento 6](https://pubmed.ncbi.nlm.nih.gov/30672045/)
+   - [Ref 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176866/)
+   - [Ref 2](https://pubmed.ncbi.nlm.nih.gov/29663411/)
+   - [Ref 3](https://pubmed.ncbi.nlm.nih.gov/30033447/)
+   - [Ref 4](https://pubmed.ncbi.nlm.nih.gov/29427210/)
+   - [Ref 5](https://pubmed.ncbi.nlm.nih.gov/30328048/)
+   - [Ref 6](https://pubmed.ncbi.nlm.nih.gov/30672045/)
 
 Esta base de datos integral proporciona un recurso rico para investigar las características del cáncer de mama y los resultados del tratamiento mediante un análisis avanzado de resonancia magnética.
 
