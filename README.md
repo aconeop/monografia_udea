@@ -51,7 +51,61 @@ $$
     -   [Gotchas](#gotchas)
 
 ## Datos
-los datos se obtuvieron de
+**Descripción de la Fuente de Datos para el Conjunto de Datos de Resonancia Magnética de Mama**
+
+1. **Visión General del Conjunto de Datos:**
+   - **Modalidades:** Imágenes por Resonancia Magnética (MR), Segmentación (SEG).
+   - **Número de Participantes:** 922.
+   - **Número de Estudios:** 922.
+   - **Número de Series:** 5,161.
+   - **Número de Imágenes:** 773,888.
+   - **Tamaño de Imágenes (GB):** 368.4.
+
+2. **Población:**
+   - El conjunto de datos incluye 922 pacientes diagnosticadas con cáncer de mama invasivo.
+   - Datos recopilados en el Hospital Duke desde el 1 de enero de 2000 hasta el 23 de marzo de 2014.
+   - Los pacientes deben haber tenido una resonancia magnética preoperatoria en el Hospital Duke.
+
+3. **Procedimiento de Anotación Radiologica:**
+   - La anotación se llevó a cabo en dos fases:
+     - Fase 1: 271 pacientes anotadas por un panel de 6 radiólogos.
+     - Fase 2: 651 pacientes anotadas por un panel de 4 radiólogos.
+     - Las anotaciones fueron realizadas por 8 radiólogos utilizando una interfaz gráfica en MATLAB.
+     - La anotación incluyó tres secuencias de resonancia magnética: pre-contraste, primer post-contraste y sustracción.
+     - 
+4. **Datos Demográficos, Clínicos, Patológicos, Genómicos, Tratamiento, Resultados y Otros:**
+   - Los datos clínicos detallados están disponibles [aquí](https://doi.org/10.7937/TCIA.e3sv-re93) bajo "Acceso a Datos" usando el elemento "Tipo de Datos" "Características Clínicas y Otros" en su version original, al igual que adinados en la carpeta [data](link aqui).
+   - Los datos incluyen información demográfica, características del tumor, hallazgos de la resonancia magnética, detalles de la cirugía, terapia de radiación, respuesta del tumor, recurrencia y seguimiento.
+
+5. **Información Técnica de Resonancia Magnética (MRI):**
+   - Los detalles técnicos están disponibles [aquí](https://doi.org/10.7937/TCIA.e3sv-re93) bajo "Acceso a Datos" usando el elemento "Tipo de Datos" "Características de Imágenes" en su version original, al igual que adinados en la carpeta [data](link aqui).
+   - La información incluye desde el diagnóstico hasta la fecha de la MRI, detalles del fabricante, opciones de escaneo, intensidad del campo y más.
+
+6. **Características de Imágenes:**
+   - Las características se extrajeron previamente de tumores y tejido fibroglandular (FGT) utilizando secuencias T1.
+   - Las características se categorizan en varios grupos, incluyendo volumen, tamaño, morfología, realce y heterogeneidad.
+
+7. **Características para Analisar:**
+   - Se tienen una serie de características que se pueden evaluar:
+     - Evaluación de la variabilidad de las características debido a cambios en el protocolo de resonancia magnética.
+     - Evaluación de la estabilidad entre lectores con un subconjunto de 50 pacientes.
+     - Validación para predecir subtipo tumoral, estado de receptor y estado de Ki-67.
+     - Validación para predecir niveles de puntuación de recurrencia de Oncotype DX.
+     - Validación para predecir respuesta completa a la terapia neoadyuvante (pCR).
+     - Validación de características asociadas con la supervivencia libre de recurrencia a distancia.
+
+8. **Publicaciones existentes basadas en el dataset:**
+   - Los hallazgos relevantes se informan en documentos científicos, accesibles a través de los enlaces relacionados en #Referencias.
+
+**Referencias:**
+   - [Enlace al Documento 1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6176866/)
+   - [Enlace al Documento 2](https://pubmed.ncbi.nlm.nih.gov/29663411/)
+   - [Enlace al Documento 3](https://pubmed.ncbi.nlm.nih.gov/30033447/)
+   - [Enlace al Documento 4](https://pubmed.ncbi.nlm.nih.gov/29427210/)
+   - [Enlace al Documento 5](https://pubmed.ncbi.nlm.nih.gov/30328048/)
+   - [Enlace al Documento 6](https://pubmed.ncbi.nlm.nih.gov/30672045/)
+
+Esta base de datos integral proporciona un recurso rico para investigar las características del cáncer de mama y los resultados del tratamiento mediante un análisis avanzado de resonancia magnética.
 
 ## Requirements
 
