@@ -105,7 +105,7 @@ Esta base de datos integral proporciona un recurso rico para investigar las cara
 
 > _Para replicar los pasos que describire seguidamente, es necesario tener en cuenta que requiere algunas herramientas las cuales son:_
 
-1. Cuenta en [Goggle Colab](https://colab.research.google.com/) activa y algunas librerias que describo a continuacion:
+1. Cuenta en [Goggle Colab](https://colab.research.google.com/) activa o algun entorno de escritorio que permita la ejecucion de codigo `python`, `Jupyter-Notebook` y algunas librerias que describo a continuacion:
 
 2. Las librerias que se requieren tener instaladas son `pydicom` `scikit-fuzzy`, se importan librerias comunes tambien como import os
 import `pandas`, `pydicom`, `matplotlib.pyplot`, `seaborn`, `segmentation` from skimage,`BytesIO` from io, `Image` from PIL, `numpy`, `requests`, `skfuzzy`, en caso de que le falte instalar una, instalela usando `!pip install -U [nombre-del-paquete]`.
