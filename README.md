@@ -114,183 +114,33 @@ Esta base de datos integral proporciona un recurso rico para investigar las cara
 1. Cuenta en [Goggle Colab](https://colab.research.google.com/) activa y algunas librerias que describo a continuacion:
 
 2. Las librerias que se requieren tener instaladas son `pydicom` `scikit-fuzzy`, se importan librerias comunes tambien como import os
-import `pandas`, `pydicom`, `matplotlib.pyplot`, `seaborn`, `segmentation` from skimage,`BytesIO` from io, `Image` from PIL, `numpy`, `requests`, `skfuzzy`, en caso de que le falte instalar una, instalela usando `!pip install -U [nombre-del-paquete]`
+import `pandas`, `pydicom`, `matplotlib.pyplot`, `seaborn`, `segmentation` from skimage,`BytesIO` from io, `Image` from PIL, `numpy`, `requests`, `skfuzzy`, en caso de que le falte instalar una, instalela usando `!pip install -U [nombre-del-paquete]`.
 
-3. 
-~a LaTeX installation
+## Guía de Uso
 
-    -   Option 1: Use [TinyTeX](https://yihui.name/tinytex/) (a minimal LaTeX installation intended for use with R Markdown)
+Para utilizar eficazmente este repositorio y replicar el estudio en otro entorno, se proporciona la siguiente guía:
 
-        -   the development version of TinyTex is [currently required](https://github.com/ulyngs/oxforddown/issues/4). Install from R with
+1. **Clonación del Repositorio:**
+   - Clone este repositorio en su entorno local utilizando el comando:
+     ```
+     git clone <URL_del_Repositorio>
+     ```
+   - Esto asegurará que tenga acceso a todos los archivos y datos necesarios.
 
-        ``` r
-        remotes::install_github('yihui/tinytex')
-        tinytex::install_tinytex()
-        ```
+2. **Entorno de Trabajo en Colab:**
+   - Para replicar el estudio en un entorno de Google Colab, abra el cuaderno Colab suministrado ("Pre-procesamientoME03.ipynb") desde el repositorio clonado.
 
-        -   Then install the LaTeX packages used by `oxforddown` (diskspace taken up by TinyTex with the required packages installed is about 280 Mb)
+3. **Configuración del Entorno:**
+   - Asegúrese de tener acceso a todas las bibliotecas y dependencias necesarias. Esto puede requerir la instalación de bibliotecas específicas utilizando los comandos `pip install` en las celdas del cuaderno.
 
-        ``` r
-        missing_packages <- c(
-          "appendix", "babel-english", "babel-greek", "babel-latin",
-          "biber", "biblatex", "caption", "cbfonts-fd", "colortbl", "csquotes",
-          "enumitem", "environ", "eso-pic", "fancyhdr", "greek-fontenc",
-          "grfext", "hyphen-greek", "hyphen-latin", "lineno", "logreq",
-          "makecell", "microtype", "minitoc", "multirow", "notoccite",
-          "oberdiek", "pdflscape", "pdfpages", "quotchap", "soul", "tabu",
-          "threeparttable", "threeparttablex", "titlesec", "tocbibind",
-          "trimspaces", "ulem", "units", "utopia", "varwidth", "wrapfig",
-          "fvextra", "xurl"
-          )
-        tinytex::tlmgr_install(missing_packages)
-        ```
+4. **Acceso a los Datos:**
+   - Utilice los enlaces proporcionados en el cuaderno para acceder a los conjuntos de datos requeridos. Esto incluye datos clínicos, imágenes de resonancia magnética y características de imágenes. Profesor David V. tenga en cuenta que en esta ocasion me enfoque en los datos clinicos y caracteristicas de las imagenes, y no en si en las imagenes, por que el procesamiento de las mismas me tocaria mucho mas tiempo para la entrega ME03.
 
-    -   Option 2: Use an ordinary LaTeX distribution
+5. **Ejecución del Código:**
+   - Siga las celdas del cuaderno secuencialmente para ejecutar el código. Asegúrese de seguir cualquier instrucción específica proporcionada en los comentarios del código.
 
-        -   Mac: download and install MacTeX from [tug.org/mactex/](http://www.tug.org/mactex/) (\~4 gigs)
-        -   Windows: download and install MikTex from [miktex.org](https://miktex.org)
+## Limitaciones del Análisis Preliminar de Datos
 
--   *If on Mac*
+El análisis preliminar de datos realizado presenta limitaciones importantes que requieren consideración. La imputación de valores nulos mediante la mediana puede introducir sesgos, especialmente en casos de distribuciones significativas de datos faltantes. Además, las decisiones sobre la imputación de columnas pueden influir en la integridad del conjunto de datos resultante. Estas limitaciones subrayan la importancia de completar el trabajo y buscar diversas alternativas para poder evaluar y validar las hipotesis del trabajpo, seria ideal ampliar la idea y lograr correlacionar de manera efectiva y acertada todas las variables disponibles.
 
-    -   Command line developer tools. If you haven't got these installed already, your mac will probably automatically prompt you to install them. Otherwise, you can install them by opening a terminal and typing `xcode-select --install`
-
--   xploit1.csv: Muestra del Data set Original, obtenido de "the cancer wiki". La muestra esta representada por X numero de pacientes, contiene Tal y tal datos.
-
--   xploit2.ipynb: Archivo de Jupyter Notebook que contiene codigo de ejecucion de scritp para replicar este ejercicio, utilizando directamente el data set anterior desde el repositorio.
-
-
-## How to use
-
--   download the **ulyngs/oxforddown** repo as a zip
--   open **oxforddown.Rproj** in RStudio
-
-### How-to chapters
-Read the ['How to use' chapter](https://ulyngs.github.io/oxforddown/how-to-use.html) to understand the structure of `oxforddown` and how to do the basic things like building your thesis.
-
-For how to use R Markdown syntax in general and in `oxforddown` in particular, read the dedicated chapters on this ([R Markdown basics](https://ulyngs.github.io/oxforddown/rmd-basics.html), [Citations, cross-references, and collaboration](https://ulyngs.github.io/oxforddown/cites-and-refs.html), and [Tables](https://ulyngs.github.io/oxforddown/tables.html)).
-
-See also the general, official R Markdown resources [*R Markdown: The Definitive Guide*](https://bookdown.org/yihui/rmarkdown/) and the [*R Markdown Cookbook*](https://bookdown.org/yihui/rmarkdown-cookbook/).
-
-### Video tutorials
-
-I am in the process of updating the tutorial videos to v3 - I've noted below which have yet to be updated, but are still informative, and struck out those that no longer apply:
-
-- [Part 1: Building the entire thesis](https://youtu.be/LBHxcuCMjnk)
-- [Part 2: Building a single chapter](https://youtu.be/8vcO252Us6g)
-- [(*old but informative*) Part 3: Understanding the file structure](https://www.youtube.com/watch?v=jafgJobOgpc)
-- [(*old but informative*) Part 4: A walk-through example of creating your thesis](https://www.youtube.com/watch?v=uWpinaVSZ6Q)
-- [~~Part 5: The content included in index.Rmd (or: why the introduction chapter is special)~~](https://www.youtube.com/watch?v=FPlwCj5ZH8M)
-- [(*old but informative*) Part 6: Adjusting the order of chapters](https://www.youtube.com/watch?v=-0M3TuDnu7Y)
-- [(*old but informative*) Part 7: \_bookdown.yml: Adjusting build settings](https://www.youtube.com/watch?v=jXYfC8RXTvg)
-- [~~Part 8: Makefile: Adjusting build settings~~](https://www.youtube.com/watch?v=L6mV8z32RfE)
-- [(*old but informative*) Part 9: The LaTeX templates](https://www.youtube.com/watch?v=o2fd_O1On7g)
-
-
-### Writing your thesis
-
--   update the YAML header (the stuff at the top between '---') in **index.Rmd** with your name, college, etc.
--   write the individual chapters as **.Rmd** files in the root folder
--   write the front matter (abstract, acknowledgements, abbreviations) and back matter (appendices) by adjusting the **.Rmd** files in the **front-and-back-matter/** folder
-
-**.Rmd** files you don't want included in the body text must be given file names that begin with an underscore (e.g. **front-and-back-matter/\_abstract.Rmd** and **front-and-back-matter/\_acknowledgements.Rmd**).
-(Alternatively, specify manually in **\_bookdown.yml** which files should be merged into the body text.)
-
-### Building your entire thesis
-
--   Build the entire thesis by opening **index.Rmd** and clicking the 'knit' button.
--   The generated thesis files are saved in the **docs/** folder
--   To choose output formats, go to the top of **index.Rmd**'s YAML header and edit the line `thesis_formats <- "pdf";` to the format(s) you want (options are "pdf", "bs4", "gitbook", and "word")
--   You can build to multiple formats simultaneously with, e.g., `thesis_formats <- c("pdf", "bs4", "word")`
--   If you want to customise the build function, edit **scripts_and_filters/knit-functions.R**
-
-#### PDF output
-
-``` yaml
-knit: (function(input, ...) {
-    thesis_formats <- "pdf";
-    ...
-```
-
-
-
-When you build the entire thesis to PDF, Latex generates a whole bunch of auxillary files - these are automatically removed after the build process end by the custom knit function that is used when you knit **index.Rmd**.
-
-To change how this removal is done, edit **scripts_and_filters/knit-functions.R**.
-The line `file.remove(list.files(pattern = "*\\.(log|mtc\\d*|maf|aux|bcf|lof|lot|out|toc)$"))` within `if ("pdf" %in% output_format){` is the one that removes files after PDF output is generated.
-
-#### BS4 book output (HTML)
-
-``` yaml
-knit: (function(input, ...) {
-    thesis_formats <- "bs4";
-    ...
-```
-
--   NOTE: the [bs4 book output](https://pkgs.rstudio.com/bookdown/reference/bs4_book.html) requires the `downlit` and `bslib` R packages (install them with `install.packages`)
--   Note also that to deploy a BS4 book on GitHub Pages, there must be a **.nojekyll** file in the **docs/** folder, otherwise GitHub does some voodoo that causes some filepaths not to work. This file is generated automatically by `oxforddown`'s knitting function.
-
-#### Gitbook output (HTML)
-
-``` yaml
-knit: (function(input, ...) {
-    thesis_formats <- "gitbook";
-    ...
-```
-
--   Note that to deploy a gitbook on GitHub Pages, there must be a **.nojekyll** file in the **docs/** folder, otherwise GitHub does some voodoo that causes some filepaths not to work. This file is generated automatically by `oxforddown`'s knitting function.
-
-#### Word output
-
-``` yaml
-knit: (function(input, ...) {
-    thesis_formats <- "word";
-    ...
-```
-
--   Note that the Word output has no templates behind it, and many things do not work (e.g. image rotation, highlighting corrections). **I encourage pull requests that optimise the Word output, e.g. by using tools from the [`officer`](https://github.com/davidgohel/officer) package.**
-
-### Building a single chapter
-
-To knit an individual chapter without compiling the entire thesis:
-
-1.  open the **.Rmd** file of a chapter
-2.  add a YAML header specifying the output format(s) (e.g. `bookdown::word_document2` for a word document you might want to upload to Google Docs for feedback from collaborators)
-3.  click the `knit` button (the output file is then saved in the root folder)
-
-As shown in the sample chapters' YAML headers, to output a single chapter to PDF, use e.g.:
-
-``` yaml
-output:
-  bookdown::pdf_document2:
-    template: templates/brief_template.tex
-    citation_package: biblatex
-documentclass: book
-bibliography: references.bib
-```
-
-The file **templates/brief_template.tex** formats the chapter in the OxThesis style but without including the front matter (table of contents, abstract, etc).
-
-**NOTE:** The bibliography path in your individual chapters' YAML headers needs to be identical to the one in **index.Rmd** - otherwise your individual chapters' bibliography path may override the path in **index.Rmd** and cause trouble when you knit the entire thesis.
-
-## Customisations and extensions
-
--   for common things you might want to do in your thesis, read through the sample content
--   the ['Customisations and extensions' chapter](https://ulyngs.github.io/oxforddown/customisations-and-extensions.html) (thanks \@bmvandoren!) has tips on how to include PDF pages from a published typeset article in your thesis, and much more!
-
-## Limitations
-
-### Gotchas
-
--   don't use underscores (\_) in your YAML front matter or code chunk labels!
-    (underscores have special meaning in LaTeX, so therefore you are likely to get an error, cf. <https://yihui.org/en/2018/03/space-pain/>)
-
-    -   bad YAML: `bibliography: bib_final.bib`
-    -   good YAML: `bibliography: bib-final.bib`
-    -   bad chunk label: `{r my_plot}`
-    -   good chunk label: `{r my-plot}`
-
-### Output formats
-
--   at the moment only PDF and HTML output have been properly implemented; I may improve on the Word output further down the line
-
-Enjoy!
+Gracias!
