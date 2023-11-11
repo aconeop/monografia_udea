@@ -44,7 +44,7 @@ $$
 -   [Datos](#datos)
 -   [Requerimientos](#requerimientos)
 -   [Guía de Uso](#guia-de-uso)
--   [Limitationes](#limitaciones)
+-   [Limitaciones](#limitaciones)
 
 ## Datos
 **Descripción de la Fuente de Datos para el Conjunto de Datos de Resonancia Magnética de Mama**
