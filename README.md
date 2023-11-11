@@ -120,6 +120,8 @@ Para utilizar eficazmente este repositorio y replicar el estudio en otro entorno
      git clone <URL_del_Repositorio>
      ```
    - Esto asegurará que tenga acceso a todos los archivos y datos necesarios.
+  
+> _Este repositorio no se encuentra publico, por lo que solo el los usuarios invitados tendran la facultad de acceso._
 
 2. **Entorno de Trabajo en Colab:**
    - Para replicar el estudio en un entorno de Google Colab, abra el cuaderno Colab suministrado ("Pre-procesamientoME03.ipynb") desde el repositorio clonado.
