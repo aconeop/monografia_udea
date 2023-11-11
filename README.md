@@ -15,9 +15,7 @@ _Siguiendo la línea de investigación de este estudio, se utilizará una muestr
 
 _Para garantizar que nuestra muestra de datos sea representativa y que nuestros modelos de Machine Learning sean efectivos, se utilizará el estadístico Z para calcular el tamaño de muestra necesario. El estadístico Z nos permitirá determinar el tamaño óptimo de la muestra, teniendo en cuenta la población de 922 pacientes en nuestro conjunto de datos de resonancias magnéticas. Al configurar el nivel de confianza y el margen de error deseado, podremos determinar cuántas observaciones son necesarias para obtener resultados sólidos en nuestro análisis._
 
-Tienes razón, para calcular el tamaño de muestra necesario, necesitas conocer el tamaño total de la población de la cual deseas tomar una muestra representativa. En tu caso, tienes una población de 922 pacientes. El cálculo del tamaño de muestra se basa en una fracción del tamaño total de la población y depende de la precisión deseada, el nivel de confianza y otros parámetros.
-
-Para calcular el tamaño de muestra necesario conociendo el tamaño total de la población, puedes utilizar una fórmula que ajusta el cálculo en consecuencia. Una fórmula común para el cálculo del tamaño de muestra en una población finita es la siguiente:
+Para calcular el tamaño de muestra necesario usare una fórmula común para el cálculo del tamaño de muestra en una población finita, es la siguiente:
 
 $$
 n = \frac{N \cdot Z^2 \cdot p(1-p)}{E^2(N-1) + Z^2 \cdot p(1-p)}
@@ -37,7 +35,7 @@ $$
 n = \frac{773888 \cdot 1.96^2 \cdot 0.5(1-0.5)}{0.05^2(773888-1) + 1.96^2 \cdot 0.5(1-0.5)} = 384
 $$
 
-
+Para trabajar las imagenes inicialmente tendremos que trabajar con una muestra del dataset de 384 imagenes, lo que implica una muestra con una confianza del 95%. Sin embargo para este punto nos enfocaremos en las caracteristicas clinicas y otras anotacion de interes de todos los pacientes en el estudio (922), al igual que de las caracteristicas de las imagenes del dataset completo, esta informacion estara disponible dentro del repositorio en formato .xlsx.
 
 # Contenido
 
