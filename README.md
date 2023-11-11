@@ -43,12 +43,8 @@ $$
 
 -   [Datos](#datos)
 -   [Requerimientos](#requerimientos)
--   [Como Usar](#como-usar)
-    -   [How-to chapters](#how-to-chapters)
-        -   [Word output](#word-output)
--   [Customisations and extensions](#customisations-and-extensions)
+-   [Guía de Uso](#guia-de-uso)
 -   [Limitationes](#limitaciones)
-    -   [Gotchas](#gotchas)
 
 ## Datos
 **Descripción de la Fuente de Datos para el Conjunto de Datos de Resonancia Magnética de Mama**
@@ -107,7 +103,7 @@ $$
 
 Esta base de datos integral proporciona un recurso rico para investigar las características del cáncer de mama y los resultados del tratamiento mediante un análisis avanzado de resonancia magnética.
 
-## Requirements
+## Requirimientos
 
 > _Para replicar los pasos que describire seguidamente, es necesario tener en cuenta que requiere algunas herramientas las cuales son:_
 
