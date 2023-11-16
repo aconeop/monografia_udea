@@ -27,7 +27,7 @@ Donde:
 - $N$ = $(773888)$ total de imagenes.  
 - $Z$ = $1.96$ valor de la distribución normal estándar correspondiente a un nivel de confianza del $95$%. 
 - $p$ = $0.5$ asumiendo que la proporción es igualmente probable de ser alta o baja dentro de la población.  
-- $E$ = $0.05$ es el margen de error que deseas permitir en tu estimación.  
+- $E$ = $0.05$ es el margen de error que deseas permitir en la estimación.  
 
 Obtuve entonces un $n$ muestral asi:  
 
